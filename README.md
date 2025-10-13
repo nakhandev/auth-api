@@ -1,55 +1,26 @@
-<!-- 🔐 Login & Registration API - Secure Auth System -->
+# 🔐 Login & Registration API
 
-<h1 align="center">🔐 Login & Registration API</h1>
-<h3 align="center">A secure authentication system with <span style="color:#6DB33F;">Spring Boot</span>, <span style="color:#00758F;">Spring Security</span>, and <span style="color:#E76F00;">JWT</span></h3>
+A secure authentication system with Spring Boot, Spring Security, and JWT
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
-    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Java-11+-F89820?style=for-the-badge&logo=openjdk&logoColor=black">
-    <img alt="Java Badge" src="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
-    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=black">
-    <img alt="Spring Boot Badge" src="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20Security-5.x-68B587?style=for-the-badge&logo=springsecurity&logoColor=white">
-    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Spring%20Security-5.x-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=black">
-    <img alt="Spring Security Badge" src="https://img.shields.io/badge/Spring%20Security-5.x-68B587?style=for-the-badge&logo=springsecurity&logoColor=white">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/JWT-Authorization-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white">
-    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/JWT-Authorization-FBBA00?style=for-the-badge&logo=jsonwebtokens&logoColor=black">
-    <img alt="JWT Badge" src="https://img.shields.io/badge/JWT-Authorization-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white">
-  </picture>
-</p>
-
----
+Java Badge Spring Boot Badge Spring Security Badge JWT Badge
 
 ## 🧩 Overview
 
-A **secure and modern authentication API** that handles **user registration**, **login**, and **JWT token–based authorization**.  
-Designed to demonstrate real-world backend security practices with **password encryption**, **role-based access**, and **stateless session management**.
-
----
+A secure and modern authentication API that handles user registration, login, and JWT token–based authorization. Designed to demonstrate real-world backend security practices with password encryption, role-based access, and stateless session management.
 
 ## ⚙️ Features
 
-- 🧾 **User Registration** – Create new users with validation  
-- 🔑 **Login Authentication** – Secure login using encrypted credentials  
-- 🛡️ **JWT Authorization** – Stateless token-based access control  
-- 🔒 **Password Encryption** – Hashed using BCrypt  
-- 👥 **Role Management** – Support for multiple user roles (e.g., USER, ADMIN)  
-- 🚨 **Global Exception Handling** – Consistent and secure error responses  
-
----
+- 🧾 **User Registration** – Create new users with validation
+- 🔑 **Login Authentication** – Secure login using encrypted credentials
+- 🛡️ **JWT Authorization** – Stateless token-based access control
+- 🔒 **Password Encryption** – Hashed using BCrypt
+- 👥 **Role Management** – Support for multiple user roles (e.g., USER, ADMIN)
+- 🚨 **Global Exception Handling** – Consistent and secure error responses
 
 ## 🧱 Tech Stack
 
 | Tech | Purpose |
-|------|----------|
+|------|---------|
 | ☕ **Java 11+** | Core language |
 | 🌿 **Spring Boot** | Framework |
 | 🧩 **Spring Security** | Authentication & authorization |
@@ -57,10 +28,9 @@ Designed to demonstrate real-world backend security practices with **password en
 | 🧰 **Maven** | Build tool |
 | 🧪 **Postman / cURL** | API testing |
 
----
-
 ## 📂 Project Structure
-```bash
+
+```
 auth-api/
 ├── controller/        # Auth endpoints
 ├── service/           # Business logic
@@ -72,48 +42,61 @@ auth-api/
     └── data.sql (optional)
 ```
 
----
-
 ## ⚡ Setup & Run
 
-### 🔧 1. Clone the repo
-```bash
-git clone https://github.com/nakhandev/auth-api.git
-cd login-registration-api
+### 🔧 1. Prerequisites
+
+- Java 11 or higher
+- Maven 3.6+
+- MySQL 8.0+
+- Git
+
+### 🗄️ 2. Database Setup
+
+```sql
+CREATE DATABASE auth_db;
 ```
 
-### ⚙️ 2. Configure Environment (`application.properties`)
+### ⚙️ 3. Configure Environment
+
+Update `src/main/resources/application.properties`:
+
 ```properties
+# Database Configuration
 spring.datasource.url=jdbc:mysql://localhost:3306/auth_db
-spring.datasource.username=nakdev
-spring.datasource.password=Linux@1998
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
-jwt.secret=yourSecretKey
+
+# JWT Configuration
 jwt.expiration=3600000
 ```
 
-### ▶️ 3. Run the App
-```bash
-mvn spring-boot:run
-```
-> App runs on: **http://localhost:8080**
+### ▶️ 4. Run the Application
 
----
+```bash
+# Using Maven
+mvn spring-boot:run
+
+# Or using the provided script
+./start.sh
+```
+
+App runs on: **http://localhost:8080**
 
 ## 📡 API Endpoints
 
 | Method | Endpoint | Description |
-|--------|-----------|-------------|
-| `POST` | `/api/auth/register` | 📝 Register new user |
-| `POST` | `/api/auth/login` | 🔐 Authenticate user |
-| `GET` | `/api/users/me` | 👤 Get logged-in user info |
-| `GET` | `/api/admin/users` | 🧾 Admin-only: list users |
-
----
+|--------|----------|-------------|
+| POST | `/api/auth/register` | 📝 Register new user |
+| POST | `/api/auth/login` | 🔐 Authenticate user |
+| GET | `/api/users/me` | 👤 Get logged-in user info |
+| GET | `/api/admin/users` | 🧾 Admin-only: list users |
 
 ## 🧾 Example Requests
 
 ### ➕ Registration
+
 ```json
 {
   "username": "nakhan",
@@ -123,6 +106,7 @@ mvn spring-boot:run
 ```
 
 ### 🔑 Login
+
 ```json
 {
   "email": "nakhan@example.com",
@@ -131,14 +115,15 @@ mvn spring-boot:run
 ```
 
 ### 🔒 Authenticated Request
+
 Use the JWT token in the header:
-```http
+
+```
 Authorization: Bearer <your_token_here>
 ```
 
----
-
 ## ⚠️ Error Response Example
+
 ```json
 {
   "timestamp": "2025-10-14T12:45:32Z",
@@ -149,39 +134,90 @@ Authorization: Bearer <your_token_here>
 }
 ```
 
----
+## 🚀 Deployment Scripts
+
+The project includes convenient deployment scripts:
+
+### Start Application
+```bash
+./start.sh
+```
+
+### Stop Application
+```bash
+./stop.sh
+```
+
+### Deploy (Pull, Build, Start)
+```bash
+./deploy.sh
+```
+
+### Push to GitHub
+```bash
+./push.sh "Your commit message"
+```
+
+## 🔒 Security Features
+
+- **Password Encryption**: BCrypt hashing with salt
+- **JWT Tokens**: Stateless authentication with configurable expiration
+- **Role-Based Access**: USER and ADMIN roles with different permissions
+- **Input Validation**: Comprehensive validation for all inputs
+- **Exception Handling**: Secure error responses without information leakage
+
+## 🗄️ Database Schema
+
+### Users Table
+- `id` - Primary key
+- `username` - Unique username
+- `email` - Unique email address
+- `password` - BCrypt hashed password
+- `created_at` - Account creation timestamp
+- `updated_at` - Last update timestamp
+
+### Roles Table
+- `id` - Primary key
+- `name` - Role name (USER, ADMIN)
+
+### User_Roles Table
+- `user_id` - Foreign key to users
+- `role_id` - Foreign key to roles
 
 ## 🚀 Future Enhancements
 
-- 📨 Email verification during registration  
-- 🔁 Token refresh endpoint  
-- 📘 Swagger documentation  
-- 🐳 Docker deployment  
-
----
+- 📨 **Email verification** during registration
+- 🔁 **Token refresh** endpoint
+- 📘 **Swagger documentation**
+- �� **Docker deployment**
+- 🔐 **OAuth2 integration**
+- 📊 **Rate limiting**
+- 📝 **Audit logging**
 
 ## 👨‍💻 Author
 
-**[MD Nawab Ali Khan](https://github.com/nakhandev)**  
-💼 *Java Backend Developer | Open Source Enthusiast*  
+**MD Nawab Ali Khan**  
+💼 Java Backend Developer | Open Source Enthusiast
 
-<p align="center">
-  <a href="https://github.com/nakhandev">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub-nakhandev-181717?style=for-the-badge&logo=github&logoColor=white">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-nakhandev-F0F0F0?style=for-the-badge&logo=github&logoColor=black">
-      <img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-nakhandev-181717?style=for-the-badge&logo=github&logoColor=white">
-    </picture>
-  </a>
-  <a href="https://nakhandev.github.io">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/🌐%20Portfolio-nakhandev.github.io-0078D7?style=for-the-badge">
-      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/🌐%20Portfolio-nakhandev.github.io-0A66C2?style=for-the-badge">
-      <img alt="Portfolio Link" src="https://img.shields.io/badge/🌐%20Portfolio-nakhandev.github.io-0078D7?style=for-the-badge">
-    </picture>
-  </a>
-</p>
+- GitHub: [nakhandev](https://github.com/nakhandev)
+- Portfolio: [Your Portfolio Link](https://your-portfolio-link.com)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📞 Support
+
+For support, email nakhan@example.com or create an issue on GitHub.
 
 ---
 
-<p align="center">✨ Built with ❤️ using <b>Spring Boot + JWT</b> ✨</p>
+✨ **Built with ❤️ using Spring Boot + JWT** ✨
