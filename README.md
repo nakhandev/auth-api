@@ -1,8 +1,30 @@
-# 🔐 Login & Registration API
+<!-- 🔐 Login & Registration API - Secure Auth System -->
 
-A secure authentication system with Spring Boot, Spring Security, and JWT
+<h1 align="center">🔐 Login & Registration API</h1>
+<h3 align="center">A secure authentication system with <span style="color:#6DB33F;">Spring Boot</span>, <span style="color:#00758F;">Spring Security</span>, and <span style="color:#E76F00;">JWT</span></h3>
 
-Java Badge Spring Boot Badge Spring Security Badge JWT Badge
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Java-11+-F89820?style=for-the-badge&logo=openjdk&logoColor=black">
+    <img alt="Java Badge" src="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=black">
+    <img alt="Spring Boot Badge" src="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20Security-5.x-68B587?style=for-the-badge&logo=springsecurity&logoColor=white">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Spring%20Security-5.x-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=black">
+    <img alt="Spring Security Badge" src="https://img.shields.io/badge/Spring%20Security-5.x-68B587?style=for-the-badge&logo=springsecurity&logoColor=white">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/JWT-Authorization-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/JWT-Authorization-FBBA00?style=for-the-badge&logo=jsonwebtokens&logoColor=black">
+    <img alt="JWT Badge" src="https://img.shields.io/badge/JWT-Authorization-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white">
+  </picture>
+</p>
 
 ## 🧩 Overview
 
@@ -194,14 +216,6 @@ The project includes convenient deployment scripts:
 - 📊 **Rate limiting**
 - 📝 **Audit logging**
 
-## 👨‍💻 Author
-
-**MD Nawab Ali Khan**  
-💼 Java Backend Developer | Open Source Enthusiast
-
-- GitHub: [nakhandev](https://github.com/nakhandev)
-- Portfolio: [Your Portfolio Link](https://your-portfolio-link.com)
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -216,8 +230,32 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, email nakhan@example.com or create an issue on GitHub.
+For support, email nakdev.nakhan@gmail.com or create an issue on GitHub.
 
 ---
 
-✨ **Built with ❤️ using Spring Boot + JWT** ✨
+## 👨‍💻 Author
+
+**[MD Nawab Ali Khan](https://github.com/nakhandev)**  
+💼 *Java Backend Developer | Open Source Enthusiast*  
+
+<p align="center">
+  <a href="https://github.com/nakhandev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub-nakhandev-181717?style=for-the-badge&logo=github&logoColor=white">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/GitHub-nakhandev-F0F0F0?style=for-the-badge&logo=github&logoColor=black">
+      <img alt="GitHub Profile" src="https://img.shields.io/badge/GitHub-nakhandev-181717?style=for-the-badge&logo=github&logoColor=white">
+    </picture>
+  </a>
+  <a href="https://nakhandev.github.io">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/🌐%20Portfolio-nakhandev.github.io-0078D7?style=for-the-badge">
+      <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/🌐%20Portfolio-nakhandev.github.io-0A66C2?style=for-the-badge">
+      <img alt="Portfolio Link" src="https://img.shields.io/badge/🌐%20Portfolio-nakhandev.github.io-0078D7?style=for-the-badge">
+    </picture>
+  </a>
+</p>
+
+---
+
+<p align="center">✨ Built with ❤️ using <b>Spring Boot + JWT</b> ✨</p>
