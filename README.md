@@ -5,14 +5,14 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Java-17+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
-    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Java-17+-F89820?style=for-the-badge&logo=openjdk&logoColor=black">
-    <img alt="Java Badge" src="https://img.shields.io/badge/Java-17+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Java-11+-F89820?style=for-the-badge&logo=openjdk&logoColor=black">
+    <img alt="Java Badge" src="https://img.shields.io/badge/Java-11+-E76F00?style=for-the-badge&logo=openjdk&logoColor=white">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
-    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=black">
-    <img alt="Spring Boot Badge" src="https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=black">
+    <img alt="Spring Boot Badge" src="https://img.shields.io/badge/Spring%20Boot-2.7.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Spring%20Security-5.x-68B587?style=for-the-badge&logo=springsecurity&logoColor=white">
@@ -50,7 +50,7 @@ Designed to demonstrate real-world backend security practices with **password en
 
 | Tech | Purpose |
 |------|----------|
-| ☕ **Java 17+** | Core language |
+| ☕ **Java 11+** | Core language |
 | 🌿 **Spring Boot** | Framework |
 | 🧩 **Spring Security** | Authentication & authorization |
 | 🔐 **JWT (JSON Web Token)** | Token-based session management |
@@ -85,8 +85,8 @@ cd login-registration-api
 ### ⚙️ 2. Configure Environment (`application.properties`)
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/auth_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
+spring.datasource.username=nakdev
+spring.datasource.password=Linux@1998
 spring.jpa.hibernate.ddl-auto=update
 jwt.secret=yourSecretKey
 jwt.expiration=3600000
